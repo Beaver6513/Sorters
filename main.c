@@ -7,6 +7,7 @@
 #include "selection_sort.h"
 #include "insertion_sort.h"
 #include "shell_sort.h"
+#include "quick_sort.h"
 
 int main() {
     int array1[] = {2, 4, 6, 3, 7, 92, 1, 5};
@@ -27,9 +28,13 @@ int main() {
     int array5[] = {3, 1, 12, 34, 23, 45, 54, 11};
     shell_sort(array5, 8);
 
+    int array6[] = {3, 1, 12, 34, 23, 45, 54, 11};
+    quick_sort(array6, 0, 7);
+
     print_array(array1, 8);
     print_array(array3, 8);
     print_array(array4, 8);
     print_array(array5, 8);
+    print_array(array6, 8);
     return 0;
 }
